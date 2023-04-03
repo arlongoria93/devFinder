@@ -19,18 +19,22 @@
 >
   <!-- search bar -->
   <div
-    class="w-[730px] bg-white flex flex-row shadow-md justify-between p-4 rounded-lg"
+    class="w-[730px] bg-white flex flex-row shadow-md justify-between p-4 rounded-lg items-center"
   >
-    <div class="flex flex-row items-center space-x-4 w-full">
-      <img src={searchIcon} alt="search" class="w-4 h-4" />
+    <div class="flex flex-row items-center space-x-4 pl-4  w-[348px] ">
+      <img src={searchIcon} alt="search" />
       <input
         type="text"
         placeholder="Search Github username..."
         class="outline-none caret-[#0079FF] w-full opacity-100 text-[18px] font-space-mono  text-[#4B6A9B]"
       />
     </div>
-    <h4 />
-    <button>search</button>
+    <div class="flex flex-row items-center space-x-4">
+    <h4 class="text-red text-[15px] font-space-mono">No results</h4>
+    <button class="bg-[#60ABFF] rounded-md p-4 text-white text-[16px] w-[106px]"
+      >Search</button
+    >
+</div>
   </div>
 
   <div
